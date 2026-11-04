@@ -1,0 +1,234 @@
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.card {
+  padding: 2em;
+}
+
+code {
+  font-family: ui-monospace, Consolas, monospace;
+}
+
+.trip-form {
+  max-width: 36rem;
+  margin: 2rem auto 0;
+  padding: 1.5rem;
+  text-align: left;
+  background: #f9f9f9;
+  border-radius: 12px;
+}
+
+.trip-form fieldset {
+  border: 1px solid #d8dde3;
+  border-radius: 8px;
+  margin: 0 0 1.25rem;
+  padding: 1rem 1rem 1.1rem;
+}
+
+.trip-form legend {
+  font-weight: 600;
+  padding: 0 0.35rem;
+}
+
+.trip-form label {
+  display: block;
+  margin: 0.65rem 0 0.3rem;
+  font-weight: 500;
+}
+
+.trip-form input[type='text'],
+.trip-form input[type='date'],
+.trip-form input[type='number'],
+.trip-form select {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #cfd6de;
+  border-radius: 8px;
+  padding: 0.55em 0.75em;
+  font-size: 1em;
+  font-family: inherit;
+  background: #ffffff;
+}
+
+.trip-form .field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem;
+}
+
+.trip-form .choice-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1.1rem;
+}
+
+.trip-form .choice {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0.35rem 0 0;
+  font-weight: 400;
+}
+
+.trip-form button[type='submit'] {
+  width: 100%;
+  background: #646cff;
+  color: #ffffff;
+}
+
+.trip-form button[type='submit']:hover:not(:disabled) {
+  border-color: transparent;
+  background: #535bf2;
+}
+
+.trip-form button[type='submit']:disabled {
+  cursor: wait;
+  opacity: 0.75;
+}
+
+.field-error {
+  margin: 0.35rem 0 0;
+  color: #b42318;
+  font-size: 0.9em;
+}
+
+.trip-summary {
+  display: block;
+  margin-top: 1.25rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.trip-summary h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.15rem;
+}
+
+.form-status {
+  margin: 0.9rem 0 0;
+  text-align: left;
+}
+
+.export-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.65rem;
+  max-width: 36rem;
+  margin: 1rem auto;
+}
+
+.saved-trips {
+  max-width: 36rem;
+  margin: 1.5rem auto;
+  text-align: left;
+}
+
+.saved-trip-button {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  text-align: left;
+}
+
+.itinerary {
+  max-width: 36rem;
+  margin: 2rem auto 0;
+  text-align: left;
+}
+
+.itinerary h2,
+.itinerary-day h3,
+.itinerary-day h4 {
+  margin: 0 0 0.35rem;
+}
+
+.itinerary-meta,
+.itinerary-date,
+.activity-cost {
+  color: #4b5563;
+  margin: 0 0 1rem;
+}
+
+.itinerary-day {
+  margin-bottom: 1.25rem;
+  padding: 1.15rem 1.25rem;
+  background: #f9f9f9;
+  border-radius: 12px;
+}
+
+.activity-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.activity-list li {
+  display: grid;
+  grid-template-columns: 4.5rem 1fr;
+  gap: 0.75rem;
+  padding: 0.85rem 0;
+  border-top: 1px solid #d8dde3;
+}
+
+.activity-time {
+  margin: 0;
+  font-weight: 600;
+}
+
+.activity-list h4 {
+  font-size: 1rem;
+}
+
+.activity-list p {
+  margin: 0.2rem 0 0;
+}
+
+@media (max-width: 640px) {
+  .trip-form .field-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media print {
+  body {
+    display: block;
+    background: #ffffff;
+  }
+
+  #root {
+    max-width: none;
+    padding: 0;
+    text-align: left;
+  }
+
+  .auth-panel,
+  .trip-form,
+  .saved-trips,
+  .export-actions {
+    display: none !important;
+  }
+
+  .itinerary {
+    max-width: none;
+    margin: 0;
+  }
+
+  .itinerary-day {
+    break-inside: avoid;
+    background: #ffffff;
+    border: 1px solid #d8dde3;
+  }
+}

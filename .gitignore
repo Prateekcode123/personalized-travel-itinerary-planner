@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Python virtual environments
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.Python
+
+# Build output
+dist/
+dist-ssr/
+build/
+*.local
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs and editor files
+logs/
+*.log
+npm-debug.log*
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json

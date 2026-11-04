@@ -1,0 +1,2 @@
+-- Database schema for Personalized Travel Itinerary Planner
+-- Add tables here when setting up Supabase.
